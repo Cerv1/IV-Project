@@ -1,0 +1,22 @@
+{
+  "name": "telegram-rss",
+  "version": "1.0.0",
+  "description": "Make a RSS from Telegram",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cerv1/IV-Project.git"
+  },
+  "author": "Cerv1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cerv1/IV-Project/issues"
+  },
+  "homepage": "https://github.com/Cerv1/IV-Project#readme"
+}
