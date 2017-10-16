@@ -1,7 +1,7 @@
 ## Infraestructura Virtual - **Tema 2**
 ___
 #### Ejercicio 1
-** Requisito inicial:** Tener instalado el lenguaje `go` en nuestro sistema.
+**Requisito inicial:** Tener instalado el lenguaje `go` en nuestro sistema.
 
 - Lo primero para realizar este ejercicio es clonar el repositorio de JJ, llamado [HitosIV](https://github.com/JJ/HitosIV) y situarnos dentro.
 
