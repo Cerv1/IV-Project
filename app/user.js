@@ -1,3 +1,5 @@
+// prototype for an user
+
 function User(name, last_name, tg_nick, password){
   this.name = name;
   this.last_name = last_name;
