@@ -1,3 +1,3 @@
 module.exports = {
-  setup = require(./app/setup)
+  setup = require(./app/user)
 };
