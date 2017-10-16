@@ -96,6 +96,9 @@ module.exports = {
 
  El test que he realizado consiste en la creación de un usuario, modificación de todos sus atributos y posterior consulta para comprobar que todo se ha actualizado correctamente.
 
+ Aquí dejo una muestra de su ejecución:
+ ![Ejecuciónd del test con assert](https://github.com/Cerv1/IV-Project/blob/master/Ejercicios/images/first-test.png)
+
 ___
 
 #### Ejercicio 3
@@ -153,6 +156,9 @@ describe('User testing stuff:', function(){
   });
 });
 ```
+Prueba de su ejecución mediante la orden `npm test`
+
+![mocha y assert](https://github.com/Cerv1/IV-Project/blob/master/Ejercicios/images/test-mocha.png)
 ___
 
 #### Ejercicio 4
