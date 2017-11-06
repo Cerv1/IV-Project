@@ -44,7 +44,6 @@ User.prototype.get_user_data = function get_user_data(){
   return this.name + " " + this.last_name + " " + this.tg_nick + " " + this.password;
 };
 
-
 module.exports = {
   User
 };
