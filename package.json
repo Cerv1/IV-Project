@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Cerv1/IV-Project/issues"
   },
-  "homepage": "https://github.com/Cerv1/IV-Project#readme"
+  "homepage": "https://github.com/Cerv1/IV-Project#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
