@@ -117,3 +117,8 @@ y en este test *"funcional"* comprobamos lo siguiente:
 * El servidor está funcionando pues podemos obtener la ruta `/`.
 * El servidor es capaz de devolver la información de los usuarios en formato `JSON` bajo la ruta `/users`.
 * El servidor responde a la creación de un nuevo usuario con un `JSON` con los datos correctos.
+
+
+#### Ejercicio 5
+
+En este caso debemos desplegar una aplicación en **Heroku**, pero ya lo hemos hecho previamente, por lo que damos el ejercicio por completado.

@@ -1,5 +1,5 @@
 var request = require('supertest'),
-  app = require('../app.js');
+    app = require('../app.js');
 
 describe('Server stuff', function() {
   it('Should create server', function(done) {
@@ -21,5 +21,4 @@ describe('Server stuff', function() {
       .expect('Content-Type', /json/)
       .expect(200, done);
   });
-
 });
