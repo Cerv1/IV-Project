@@ -4,7 +4,7 @@ ___
 
 Este ejercicio no tiene mucha explicación, simplemente darnos de alta en algún servicio PaaS. En mi caso he elegido [Heroku](https://www.heroku.com/).
 
-
+___
 #### Ejercicio 2
 
 En este ejercicio debemos crear una aplicación en dicho PaaS y realizar un despliegue en él. En mi caso, como utilizamos Heroku nos vamos a la web oficial y seguimos los pasos de [este tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
@@ -21,7 +21,7 @@ Y aquí podemos comprobar que todo está correcto:
 
 ![Primera app en heroku](https://github.com/Cerv1/IV-Project/blob/master/Ejercicios/images/heroku-working.png)
 
-
+___
 #### Ejercicio 3
 
 En este ejercicio tenemos que crear una aplicación en express con parámetros. Para ello he modificado mi archivo `app.js` con el siguiente contenido:
