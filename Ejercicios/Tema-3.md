@@ -79,3 +79,41 @@ la cual crea un JSON con el siguiente formato:
 ```
 
 Una vez realizado esto, podremos acceder a `localhost:5000/users` y obtendremos una lista con formato `JSON` con todos los usuarios creados mediante el comando anterior. Esta es una versión de test y se devuelve en texto plano el `JSON`, pero como es evidente, el potencial de esto es muy alto.
+
+
+#### Ejercicio 4
+
+El archivo de tests que le vamos a pasar al servidor es el siguiente:
+
+```js
+var request = require('supertest'),
+    app = require('../app.js');
+
+describe('Server stuff', function() {
+  it('Should create server', function(done) {
+    request(app)
+      .get('/')
+      .expect(200, done)
+  });
+
+  it('Should get users info in JSON', function(done) {
+    request(app)
+      .get('/users')
+      .expect('Content-Type', /json/)
+      .expect(200, done)
+  });
+
+  it('Should get new user JSON', function(done) {
+    request(app)
+      .put('/user/adri/gipsy/adrix/mypass/')
+      .expect('Content-Type', /json/)
+      .expect(200, done);
+  });
+});
+```
+
+y en este test *"funcional"* comprobamos lo siguiente:
+
+* El servidor está funcionando pues podemos obtener la ruta `/`.
+* El servidor es capaz de devolver la información de los usuarios en formato `JSON` bajo la ruta `/users`.
+* El servidor responde a la creación de un nuevo usuario con un `JSON` con los datos correctos.

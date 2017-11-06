@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Cerv1/IV-Project#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "supertest": "^3.0.0"
   }
 }
