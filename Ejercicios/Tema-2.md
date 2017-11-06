@@ -1,5 +1,5 @@
 ## Infraestructura Virtual - **Tema 2**
-***
+___
 #### Ejercicio 1
 **Requisito inicial:** Tener instalado el lenguaje `go` en nuestro sistema.
 
