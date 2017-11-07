@@ -7,7 +7,7 @@ var users = new Array;
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
   response.send("Hello, I'm working! You can go to /testing too :)");
