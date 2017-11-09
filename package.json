@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/Cerv1/IV-Project#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "express": "^4.16.2",
+    "mocha": "^4.0.1",
     "supertest": "^3.0.0"
   }
 }
