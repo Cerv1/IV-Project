@@ -9,7 +9,13 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
+// serving an example html
 app.get('/', function(request, response) {
+  response.send('index.html');
+});
+
+// if the API is up, it should send OK
+app.get('/status', function(request, response) {
   response.send('{"status":"OK"}');
 });
 
