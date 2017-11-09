@@ -23,7 +23,7 @@ Descargarnos los ficheros fuentes del *toolbet* de Heroku y los instalamos sigui
 #### Configuración de la aplicación para trabajar con nuestro repositorio
 Con este paso conseguiremos que cada vez que hagamos un `git push` y **pase los test de integración contínua** se despliegue el nuevo código directamente en Heroku.
 
-Para esto lo único que deberemos hacer es ir al panel de control de nuestra aplicación en la web de Heroku y seleccionar el repositorio de nuestra aplicación. Con esto hará automáticamente el despliegue cada vez que subamos código validado (que haya pasado los test).
+Para esto lo único que deberemos hacer es ir al panel de control de nuestra aplicación en la web de Heroku y seleccionar el repositorio de nuestra aplicación. Con esto hará automáticamente el despliegue cada vez que subamos código validado (que haya pasado los test). Gracias a esto **no** deberemos ejecutar la orden `git push heroku master`, con un simple `git push` se sube a ambos sitios.
 
 #### Despliegue de la aplicación
 Ahora deberemos crear una aplicación de Heroku co la orden `heroku create <nombre-app>`. Por último, podemos ir a la url de nuestra aplicación web o directamente ejecutar `heroku open`.
