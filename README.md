@@ -12,7 +12,7 @@ Con esta aplicación se pretende facilitar la lectura de los canales de Telegram
 
 * API de **Telegram**.
 * Pila **MEAN** (MongoDb, ExpressJS, AngularJS, NodeJS).
-* Despliegue en la nube con **Azure**.
+* Despliegue en la nube con **Heroku**.
 * Test de integración contínua con `Travis CI`.
 
 ## Despliegue
