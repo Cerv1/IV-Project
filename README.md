@@ -39,6 +39,8 @@ Despliegue https://cervi-in-clouds.herokuapp.com/
 
 Contenedor: https://myappnowwithdocker-byjgworrkn.now.sh/
 
+## Colaboración
+He ayudado a mi compañero @æadrianmorente en su aplicación añadiendo alguna que otra funcionalidad y nuevos test. Enlace al `pull request`: https://github.com/adrianmorente/PracticasIV/pull/16
 
 ## ¡Pruébalo tu mismo!
 
