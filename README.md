@@ -25,7 +25,7 @@ Con este paso conseguiremos que cada vez que hagamos un `git push` y **pase los 
 
 Para esto lo único que deberemos hacer es ir al panel de control de nuestra aplicación en la web de Heroku y seleccionar el repositorio de nuestra aplicación. Con esto hará automáticamente el despliegue cada vez que subamos código validado (que haya pasado los test). Gracias a esto **no** deberemos ejecutar la orden `git push heroku master`, con un simple `git push` se sube a ambos sitios.
 
-#### Despliegue de la aplicación
+#### Despliegue de la aplicación en Heroku
 Ahora deberemos crear una aplicación de Heroku co la orden `heroku create <nombre-app>`. Por último, podemos ir a la url de nuestra aplicación web o directamente ejecutar `heroku open`.
 
 **NOTA:** Para forzar que la aplicación esté ejecutándose en al menos un *dyno* ejecutaremos `heroku ps:scale web=1`
@@ -33,11 +33,12 @@ Ahora deberemos crear una aplicación de Heroku co la orden `heroku create <nomb
 
 Como podemos comprobar se ha realizado en [Heroku](https://www.heroku.com/).
 
-
-
-
-
 Despliegue https://cervi-in-clouds.herokuapp.com/
+
+#### Despliegue de la aplicación en Docker
+
+Contenedor: https://myappnowwithdocker-byjgworrkn.now.sh/
+
 
 ## ¡Pruébalo tu mismo!
 
