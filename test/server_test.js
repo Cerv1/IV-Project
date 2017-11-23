@@ -7,7 +7,7 @@ describe('Server stuff', function() {
   it('Should create server', function(done) {
     request(app)
       .get('/')
-      .expect('Content-Type', "text/html; charset=utf-8")
+      .expect('Content-Type', "text/html; charset=UTF-8")
       .expect(200, done);
   });
 
