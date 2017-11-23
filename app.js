@@ -11,7 +11,8 @@ app.use(express.static(__dirname + '/public'));
 
 // serving an example html
 app.get('/', function(request, response) {
-  response.send('index.html');
+  response.sendFile('index.html', {root: __dirname })
+
 });
 
 // if the API is up, it should send OK
