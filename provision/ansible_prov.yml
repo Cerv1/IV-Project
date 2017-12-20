@@ -1,0 +1,28 @@
+---
+  - hosts: all
+
+    tasks:
+      - name: Actualizar lista de paquetes del sistema
+        become: yes
+        apt:
+          update_cache: yes
+
+      - name: Instalar nodejs
+        become: yes
+        apt:
+          name: nodejs
+          state: present
+
+      - name: Instalar npm
+        become: yes
+        apt:
+          name: npm
+          state: present
+
+      - name: Clonar el repositorio
+        git: repo=https://github.com/Cerv1/IV-Project/ dest=~/IV-Application/ clone=yes force=yes
+
+      - name: Instalar las dependencias de la aplicación
+        become: yes
+        npm:
+          path: ~/IV-Application/

@@ -25,5 +25,8 @@
     "express": "^4.16.2",
     "mocha": "^4.0.1",
     "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.17"
   }
 }
