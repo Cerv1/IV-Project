@@ -19,5 +19,11 @@
           name: npm
           state: present
 
+      - name: Instalar PM2
+        become: yes
+        npm:
+          name: pm2
+          global: yes
+
       - name: Clonar el repositorio
         git: repo=https://github.com/Cerv1/IV-Project/ dest=~/IV-Application/ clone=yes force=yes

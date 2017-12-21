@@ -40,6 +40,43 @@ Despliegue https://cervi-in-clouds.herokuapp.com/
 DockerHub: https://hub.docker.com/r/cerv1/iv-project/
 Contenedor: https://myappnowwithdocker-byjgworrkn.now.sh/
 
+#### Despliegue y provisionamiento automático en Azure
+
+Para realizar esta tarea lo primero que deberemos hacer será seguir el tutorial oficial de [Azure](https://github.com/Azure/azure-cli) para instalar en nuestro sistema `az` y poder obtener los datos necesarios para la configuración del fichero de `Vagrant`.
+
+Una vez hecho esto, tendremos que añadir a nuestro fichero [Vagranfile](https://github.com/Cerv1/IV-Project/blob/master/Vagrantfile) unas cuantas líneas de configuración:
+
+##### Permitir conexión web en la MV
+`config.vm.network "forwarded_port", guest: 80, host: 80`
+
+##### Especificar el provisionamiento con `ansible`
+
+    config.vm.provision :ansible do |ansible|
+        ansible.playbook = "provision/ansible_prov.yml"
+    end
+
+Como podemos observar, le indicamos el provisionamiento a la máquina mediante el fichero de [ansible_prov.yml](https://github.com/Cerv1/IV-Project/blob/master/provision/ansible_prov.yml).
+
+Dicho fichero es muy sencillo de interpretar ya que lo único que hace es provisionar a la máquina de los paquetes necesarios (¿redundancia?, no...)
+
+En este caso instalamos los paquetes necesarios para nuestra aplicación que son `nodejs-legacy` para poder utilizar la orden `node`, `npm` para poder instalar módulos de node y, además, `pm2` como paquete de `npm` de manera global en el sistema para lanzar nuestra aplicación con algún intermediario.
+
+Por último pero no menos importante, el despliegue con `Flightplan`. Para esto simplemente tendremos que crear un fichero llamado `flighplan.js` en el que le indicamos la máquina a la que se va a conectar, las credenciales de inicio de sesión y por último, los comandos necesarios para lanzar nuestra aplicación. En este caso serán:
+- `npm install` para instalar las dependencias.
+- `sudo pm2 start app.js` para lanzar nuestra aplicación web en el puerto 80.
+
+**NOTA:** Antes de lanzar la aplicación deberemos cambiar la línea **host:** con el `DNS Label` que obtenemos de la ejecución de `vagrant up --provider=azure`.
+
+## Proceso para ejecutar desde 0
+
+1. Clonar este repositorio `git clone htpps://github.com/Cerv1/IV-Project`
+2. Crear la máquina con Vagrant y provisionarla: `vagrant up --provider=azure`
+3. Modificar el fichero `flightplan.js` con el nuevo **DNS Label Prefix**.
+4. **¡A volar!** `fly staging`
+
+
+Despliegue final: 40.86.178.119
+
 
 ## Colaboración
 He ayudado a mi compañero @æadrianmorente en su aplicación añadiendo alguna que otra funcionalidad y nuevos test. Enlace al `pull request`: https://github.com/adrianmorente/PracticasIV/pull/16

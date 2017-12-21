@@ -3,7 +3,11 @@ Vagrant.configure('2') do |config|
 
   # use local ssh key to connect to remote vagrant box
   config.ssh.private_key_path = '~/.ssh/id_rsa'
+  config.vm.network "public_network" 
+  config.vm.network "forwarded_port", guest: 80, host: 80
+
   config.vm.provider :azure do |azure, override|
+
 
     # configuration needed for Azure
     azure.tenant_id = '875cbb37-231c-44f5-965d-a2e2a0f0ab47'

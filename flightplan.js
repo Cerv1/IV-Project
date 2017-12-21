@@ -2,7 +2,7 @@
 
   // configuration only in staging machine
   plan.target('staging', {
-    host: 'twilight-hill-77.westus.cloudapp.azure.com',
+    host: 'delicate-sunset-33.westus.cloudapp.azure.com',
     username: 'vagrant',
     agent: process.env.SSH_AUTH_SOCK
   });
@@ -12,7 +12,8 @@
 
     remote.with('cd ~/IV-Application', function() {
       remote.exec('npm install');
-      remote.exec('sudo pm2 start');
+      remote.exec('npm install');
+      remote.exec('sudo pm2 start app.js');
     });
 
   });
