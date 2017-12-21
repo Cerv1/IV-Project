@@ -7,10 +7,10 @@
         apt:
           update_cache: yes
 
-      - name: Instalar nodejs
+      - name: Instalar nodejs-legacy para poder utilizar node
         become: yes
         apt:
-          name: nodejs
+          name: nodejs-legacy
           state: present
 
       - name: Instalar npm

@@ -7,10 +7,10 @@
         apt:
           update_cache: yes
 
-      - name: Instalar nodejs
+      - name: Instalar nodejs-legacy para poder utilizar node
         become: yes
         apt:
-          name: nodejs
+          name: nodejs-legacy
           state: present
 
       - name: Instalar npm
@@ -21,8 +21,3 @@
 
       - name: Clonar el repositorio
         git: repo=https://github.com/Cerv1/IV-Project/ dest=~/IV-Application/ clone=yes force=yes
-
-      - name: Instalar las dependencias de la aplicación
-        become: yes
-        npm:
-          path: ~/IV-Application/

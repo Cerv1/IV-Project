@@ -23,10 +23,9 @@
   "dependencies": {
     "assert": "^1.4.1",
     "express": "^4.16.2",
+    "flightplan": "^0.6.17",
     "mocha": "^4.0.1",
     "supertest": "^3.0.0"
   },
-  "devDependencies": {
-    "flightplan": "^0.6.17"
-  }
+  "devDependencies": {}
 }
