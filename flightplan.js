@@ -12,7 +12,7 @@
 
     remote.with('cd ~/IV-Application', function() {
       remote.exec('npm install');
-      remote.exec('sudo npm start');
+      remote.exec('sudo pm2 start');
     });
 
   });
