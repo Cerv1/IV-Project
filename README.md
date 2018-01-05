@@ -79,7 +79,7 @@ Despliegue final: 40.86.178.119
 
 
 ## Colaboración
-He ayudado a mi compañero @æadrianmorente en su aplicación añadiendo alguna que otra funcionalidad y nuevos test. Enlace al `pull request`: https://github.com/adrianmorente/PracticasIV/pull/16
+He ayudado a mi compañero @adrianmorente en su aplicación añadiendo alguna que otra funcionalidad y nuevos tests. Enlace al `pull request`: https://github.com/adrianmorente/PracticasIV/pull/16
 
 ## ¡Pruébalo tu mismo!
 
