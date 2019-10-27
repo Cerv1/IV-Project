@@ -19,5 +19,5 @@
   });
 
   plan.local(function(local) {
-    local.log('Clean up');
+    local.log('Cleaning up...');
   });
